@@ -1,8 +1,40 @@
 @font-face {
   font-family: 'Rawest';
-  src: url('../fonts/Rawest-Regular.woff2') format('woff2'),
-       url('../fonts/Rawest-Regular.woff') format('woff');
+  src: url('/assets/fonts/rawest-light-webfont.woff2') format('woff2'),
+       url('/assets/fonts/rawest-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rawest';
+  src: url('/assets/fonts/rawest-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/rawest-regular-webfont.woff') format('woff');
   font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rawest';
+  src: url('/assets/fonts/rawest-medium-webfont.woff2') format('woff2'),
+       url('/assets/fonts/rawest-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rawest';
+  src: url('/assets/fonts/rawest-semibold-webfont.woff2') format('woff2'),
+       url('/assets/fonts/rawest-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rawest';
+  src: url('/assets/fonts/rawest-bold-webfont.woff2') format('woff2'),
+       url('/assets/fonts/rawest-bold-webfont.woff') format('woff');
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -13,7 +45,7 @@ html {
 body {
   font-family: 'Rawest', sans-serif;
   font-weight: 400;
-  background-image: url(../images/4_ilustracija_contact.svg);
+  background-image: url('/assets/images/4_ilustracija_contact.svg');
   background-size: cover;
   background-attachment: fixed;
   background-position: 20%;

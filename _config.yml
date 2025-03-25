@@ -1,0 +1,23 @@
+title: KO-KE Creative Farm
+description: Studio for visual communications & multifunctional space
+baseurl: ""
+url: "https://new.ko-ke.net"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git

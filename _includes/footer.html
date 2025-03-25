@@ -1,0 +1,29 @@
+<!-- Footer -->
+<footer class="bg-white p-4 md:p-8 text-sm">
+  <div class="flex flex-col md:flex-row justify-between">
+    <div class="">
+      {% for item in site.data.footer.description %}
+      <p>{{ item.text }}</p>
+      {% endfor %}
+    </div>
+    
+    <div class="">
+      <p>location:</p>
+      {% for item in site.data.footer.location %}
+      <p>{{ item.text }}</p>
+      {% endfor %}
+    </div>
+    
+    <div class="">
+      <p>instagram: @{{ site.data.footer.social.instagram }}</p>
+      <p>follow: {% for tag in site.data.footer.social.hashtags %}#{{ tag }}{% unless forloop.last %} {% endunless %}{% endfor %}</p>
+    </div>
+    
+    <div>
+      {% if site.data.footer.newsletter %}
+      <p>suscribe to newsletter</p>
+      {% endif %}
+      <p>{{ site.data.footer.copyright }}</p>
+    </div>
+  </div>
+</footer>

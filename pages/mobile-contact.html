@@ -1,0 +1,26 @@
+---
+layout: default
+title: Mobile Contact
+---
+<div class="md:col-span-4 md:col-start-3 col-start-0 col-span-6">
+  <div class="mb-4">
+    <h1 class="text-2xl md:text-4xl font-bold mb-2">Contact</h1>
+    <a href="mailto:hello@ko-ke.net" class="text-2xl md:text-4xl">hello@ko-ke.net</a>
+  </div>
+  
+  <div class="mb-4">
+    <h2 class="text-2xl md:text-4xl font-bold mb-2">Location</h2>
+    <p class="text-2xl md:text-4xl">{{ site.data.footer.location[0].text }}</p>
+    <p class="text-2xl md:text-4xl">{{ site.data.footer.location[1].text }}</p>
+  </div>
+  
+  <h2 class="font-bold mb-2">Team</h2>
+  {% for member in site.data.team.members %}
+  <div class="mb-2">
+    <h3 class="font-bold">{{ member.name }}</h3>
+    <p>{{ member.position }}</p>
+    <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+    <p>{{ member.phone }}</p>
+  </div>
+  {% endfor %}
+</div>
